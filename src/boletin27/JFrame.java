@@ -145,8 +145,9 @@ public class JFrame extends javax.swing.JFrame {
         fieldNombre.setText(null);
         file[1]=fieldApellido.getText();
         fieldApellido.setText(null);
-        file[2]=boxCurso.getToolTipText();
-        boxCurso.setToolTipText(null);
+        file[2]=boxCurso.getSelectedItem().toString();
+        
+        
         modelo.addRow(file);
     }//GEN-LAST:event_agregarActionPerformed
 
